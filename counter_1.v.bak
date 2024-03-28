@@ -1,0 +1,30 @@
+module counter_1S (
+   input clk, rst_n,
+	output reg [3:0] sec_1
+);
+parameter DE2_freq=50000000;
+parameter Pulse_width=1;
+parameter counter_value = DE2_freq * Pulse_width;
+reg [31:0] counter;
+reg [3:0] dem;
+
+always @(posedge clk or negedge rst_n) begin
+    if (~rst_n) begin 
+        counter <= 0; 
+        dem <= 4'b0000; 
+        sec_1 <= 0; 
+    end
+    else if (counter < counter_value) begin
+        counter <= counter + 1;
+    end
+    else begin
+        counter <= 0; 
+        if (dem == 4'b1001) 
+            dem <= 4'b0000; 
+        else
+            dem <= dem + 1; 
+        sec_1 <= dem; 
+    end
+end
+
+endmodule

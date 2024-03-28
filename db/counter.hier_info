@@ -1,0 +1,1482 @@
+|counter
+clk => clk.IN1
+rst_n => rst_n.IN8
+led1[0] << LED7:led7a.led
+led1[1] << LED7:led7a.led
+led1[2] << LED7:led7a.led
+led1[3] << LED7:led7a.led
+led1[4] << LED7:led7a.led
+led1[5] << LED7:led7a.led
+led1[6] << LED7:led7a.led
+led2[0] << LED7:led7b.led
+led2[1] << LED7:led7b.led
+led2[2] << LED7:led7b.led
+led2[3] << LED7:led7b.led
+led2[4] << LED7:led7b.led
+led2[5] << LED7:led7b.led
+led2[6] << LED7:led7b.led
+led3[0] << LED7:led7c.led
+led3[1] << LED7:led7c.led
+led3[2] << LED7:led7c.led
+led3[3] << LED7:led7c.led
+led3[4] << LED7:led7c.led
+led3[5] << LED7:led7c.led
+led3[6] << LED7:led7c.led
+led4[0] << LED7:led7d.led
+led4[1] << LED7:led7d.led
+led4[2] << LED7:led7d.led
+led4[3] << LED7:led7d.led
+led4[4] << LED7:led7d.led
+led4[5] << LED7:led7d.led
+led4[6] << LED7:led7d.led
+led5[0] << LED7:led7e.led
+led5[1] << LED7:led7e.led
+led5[2] << LED7:led7e.led
+led5[3] << LED7:led7e.led
+led5[4] << LED7:led7e.led
+led5[5] << LED7:led7e.led
+led5[6] << LED7:led7e.led
+led6[0] << LED7:led7f.led
+led6[1] << LED7:led7f.led
+led6[2] << LED7:led7f.led
+led6[3] << LED7:led7f.led
+led6[4] << LED7:led7f.led
+led6[5] << LED7:led7f.led
+led6[6] << LED7:led7f.led
+
+
+|counter|clock:clo
+clk_1s => clock~reg0.CLK
+clk_1s => counter[0].CLK
+clk_1s => counter[1].CLK
+clk_1s => counter[2].CLK
+clk_1s => counter[3].CLK
+clk_1s => counter[4].CLK
+clk_1s => counter[5].CLK
+clk_1s => counter[6].CLK
+clk_1s => counter[7].CLK
+clk_1s => counter[8].CLK
+clk_1s => counter[9].CLK
+clk_1s => counter[10].CLK
+clk_1s => counter[11].CLK
+clk_1s => counter[12].CLK
+clk_1s => counter[13].CLK
+clk_1s => counter[14].CLK
+clk_1s => counter[15].CLK
+clk_1s => counter[16].CLK
+clk_1s => counter[17].CLK
+clk_1s => counter[18].CLK
+clk_1s => counter[19].CLK
+clk_1s => counter[20].CLK
+clk_1s => counter[21].CLK
+clk_1s => counter[22].CLK
+clk_1s => counter[23].CLK
+clk_1s => counter[24].CLK
+clk_1s => counter[25].CLK
+clk_1s => counter[26].CLK
+rst_1s => clock~reg0.ACLR
+rst_1s => counter[0].ACLR
+rst_1s => counter[1].ACLR
+rst_1s => counter[2].ACLR
+rst_1s => counter[3].ACLR
+rst_1s => counter[4].ACLR
+rst_1s => counter[5].ACLR
+rst_1s => counter[6].ACLR
+rst_1s => counter[7].ACLR
+rst_1s => counter[8].ACLR
+rst_1s => counter[9].ACLR
+rst_1s => counter[10].ACLR
+rst_1s => counter[11].ACLR
+rst_1s => counter[12].ACLR
+rst_1s => counter[13].ACLR
+rst_1s => counter[14].ACLR
+rst_1s => counter[15].ACLR
+rst_1s => counter[16].ACLR
+rst_1s => counter[17].ACLR
+rst_1s => counter[18].ACLR
+rst_1s => counter[19].ACLR
+rst_1s => counter[20].ACLR
+rst_1s => counter[21].ACLR
+rst_1s => counter[22].ACLR
+rst_1s => counter[23].ACLR
+rst_1s => counter[24].ACLR
+rst_1s => counter[25].ACLR
+rst_1s => counter[26].ACLR
+clock <= clock~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|counter_1:cnt_1
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|counter_10:cnt_10
+clk => clk.IN1
+rst_n => rst_n.IN1
+sec_10[0] <= sec_10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[1] <= sec_10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[2] <= sec_10[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_1min <= clock_1min~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|counter_10:cnt_10|counter_1:khoi_giay
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|min_1:min_1
+clk => clk.IN2
+rst_n => rst_n.IN2
+minutes_1[0] <= minutes_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[1] <= minutes_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[2] <= minutes_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[3] <= minutes_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_min10 <= clock_min10~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|min_1:min_1|counter_1:khoi_phut_1a
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|min_1:min_1|counter_10:khoi_phut_1b
+clk => clk.IN1
+rst_n => rst_n.IN1
+sec_10[0] <= sec_10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[1] <= sec_10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[2] <= sec_10[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_1min <= clock_1min~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|min_1:min_1|counter_10:khoi_phut_1b|counter_1:khoi_giay
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|min_10:min_10
+clk => clk.IN3
+rst_n => rst_n.IN3
+minutes_10[0] <= minutes_10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_10[1] <= minutes_10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_10[2] <= minutes_10[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_10[3] <= minutes_10[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_hour1 <= clock_hour1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|min_10:min_10|counter_1:khoi_phut_10a
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|min_10:min_10|counter_10:khoi_phut_10b
+clk => clk.IN1
+rst_n => rst_n.IN1
+sec_10[0] <= sec_10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[1] <= sec_10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[2] <= sec_10[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_1min <= clock_1min~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|min_10:min_10|counter_10:khoi_phut_10b|counter_1:khoi_giay
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|min_10:min_10|min_1:khoi_phut_10c
+clk => clk.IN2
+rst_n => rst_n.IN2
+minutes_1[0] <= minutes_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[1] <= minutes_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[2] <= minutes_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[3] <= minutes_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_min10 <= clock_min10~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|min_10:min_10|min_1:khoi_phut_10c|counter_1:khoi_phut_1a
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|min_10:min_10|min_1:khoi_phut_10c|counter_10:khoi_phut_1b
+clk => clk.IN1
+rst_n => rst_n.IN1
+sec_10[0] <= sec_10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[1] <= sec_10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[2] <= sec_10[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_1min <= clock_1min~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|min_10:min_10|min_1:khoi_phut_10c|counter_10:khoi_phut_1b|counter_1:khoi_giay
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_1:hour_1
+clk => clk.IN1
+rst_n => rst_n.IN2
+hours_1[0] <= hours_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hours_1[1] <= hours_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hours_1[2] <= hours_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hours_1[3] <= hours_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hours_1[4] <= hours_1[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_hour10 <= clock_hour10~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_1:hour_1|min_1:khoi_gio_1a
+clk => clk.IN2
+rst_n => rst_n.IN2
+minutes_1[0] <= minutes_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[1] <= minutes_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[2] <= minutes_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[3] <= minutes_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_min10 <= clock_min10~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_1:hour_1|min_1:khoi_gio_1a|counter_1:khoi_phut_1a
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_1:hour_1|min_1:khoi_gio_1a|counter_10:khoi_phut_1b
+clk => clk.IN1
+rst_n => rst_n.IN1
+sec_10[0] <= sec_10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[1] <= sec_10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[2] <= sec_10[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_1min <= clock_1min~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_1:hour_1|min_1:khoi_gio_1a|counter_10:khoi_phut_1b|counter_1:khoi_giay
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_1:hour_1|min_10:khoi_gio_1b
+clk => clk.IN3
+rst_n => rst_n.IN3
+minutes_10[0] <= minutes_10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_10[1] <= minutes_10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_10[2] <= minutes_10[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_10[3] <= minutes_10[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_hour1 <= clock_hour1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_1:hour_1|min_10:khoi_gio_1b|counter_1:khoi_phut_10a
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_1:hour_1|min_10:khoi_gio_1b|counter_10:khoi_phut_10b
+clk => clk.IN1
+rst_n => rst_n.IN1
+sec_10[0] <= sec_10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[1] <= sec_10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[2] <= sec_10[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_1min <= clock_1min~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_1:hour_1|min_10:khoi_gio_1b|counter_10:khoi_phut_10b|counter_1:khoi_giay
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_1:hour_1|min_10:khoi_gio_1b|min_1:khoi_phut_10c
+clk => clk.IN2
+rst_n => rst_n.IN2
+minutes_1[0] <= minutes_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[1] <= minutes_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[2] <= minutes_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[3] <= minutes_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_min10 <= clock_min10~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_1:hour_1|min_10:khoi_gio_1b|min_1:khoi_phut_10c|counter_1:khoi_phut_1a
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_1:hour_1|min_10:khoi_gio_1b|min_1:khoi_phut_10c|counter_10:khoi_phut_1b
+clk => clk.IN1
+rst_n => rst_n.IN1
+sec_10[0] <= sec_10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[1] <= sec_10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[2] <= sec_10[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_1min <= clock_1min~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_1:hour_1|min_10:khoi_gio_1b|min_1:khoi_phut_10c|counter_10:khoi_phut_1b|counter_1:khoi_giay
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_10:hour_10
+clk => clk.IN1
+rst_n => rst_n.IN1
+hours_10[0] <= hours_10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hours_10[1] <= hours_10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_day1 <= clock_day1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_10:hour_10|hour_1:khoi_gio_10a
+clk => clk.IN1
+rst_n => rst_n.IN2
+hours_1[0] <= hours_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hours_1[1] <= hours_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hours_1[2] <= hours_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hours_1[3] <= hours_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hours_1[4] <= hours_1[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_hour10 <= clock_hour10~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_10:hour_10|hour_1:khoi_gio_10a|min_1:khoi_gio_1a
+clk => clk.IN2
+rst_n => rst_n.IN2
+minutes_1[0] <= minutes_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[1] <= minutes_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[2] <= minutes_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[3] <= minutes_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_min10 <= clock_min10~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_10:hour_10|hour_1:khoi_gio_10a|min_1:khoi_gio_1a|counter_1:khoi_phut_1a
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_10:hour_10|hour_1:khoi_gio_10a|min_1:khoi_gio_1a|counter_10:khoi_phut_1b
+clk => clk.IN1
+rst_n => rst_n.IN1
+sec_10[0] <= sec_10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[1] <= sec_10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[2] <= sec_10[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_1min <= clock_1min~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_10:hour_10|hour_1:khoi_gio_10a|min_1:khoi_gio_1a|counter_10:khoi_phut_1b|counter_1:khoi_giay
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_10:hour_10|hour_1:khoi_gio_10a|min_10:khoi_gio_1b
+clk => clk.IN3
+rst_n => rst_n.IN3
+minutes_10[0] <= minutes_10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_10[1] <= minutes_10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_10[2] <= minutes_10[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_10[3] <= minutes_10[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_hour1 <= clock_hour1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_10:hour_10|hour_1:khoi_gio_10a|min_10:khoi_gio_1b|counter_1:khoi_phut_10a
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_10:hour_10|hour_1:khoi_gio_10a|min_10:khoi_gio_1b|counter_10:khoi_phut_10b
+clk => clk.IN1
+rst_n => rst_n.IN1
+sec_10[0] <= sec_10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[1] <= sec_10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[2] <= sec_10[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_1min <= clock_1min~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_10:hour_10|hour_1:khoi_gio_10a|min_10:khoi_gio_1b|counter_10:khoi_phut_10b|counter_1:khoi_giay
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_10:hour_10|hour_1:khoi_gio_10a|min_10:khoi_gio_1b|min_1:khoi_phut_10c
+clk => clk.IN2
+rst_n => rst_n.IN2
+minutes_1[0] <= minutes_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[1] <= minutes_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[2] <= minutes_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[3] <= minutes_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_min10 <= clock_min10~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_10:hour_10|hour_1:khoi_gio_10a|min_10:khoi_gio_1b|min_1:khoi_phut_10c|counter_1:khoi_phut_1a
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_10:hour_10|hour_1:khoi_gio_10a|min_10:khoi_gio_1b|min_1:khoi_phut_10c|counter_10:khoi_phut_1b
+clk => clk.IN1
+rst_n => rst_n.IN1
+sec_10[0] <= sec_10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[1] <= sec_10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[2] <= sec_10[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_1min <= clock_1min~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|hour_10:hour_10|hour_1:khoi_gio_10a|min_10:khoi_gio_1b|min_1:khoi_phut_10c|counter_10:khoi_phut_1b|counter_1:khoi_giay
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year
+clk => clk.IN2
+rst_n => rst_n.IN2
+day_1[0] <= <GND>
+day_1[1] <= LessThan5.DB_MAX_OUTPUT_PORT_TYPE
+day_1[2] <= temp_day.DB_MAX_OUTPUT_PORT_TYPE
+day_1[3] <= temp_day.DB_MAX_OUTPUT_PORT_TYPE
+day_10[0] <= temp_day.DB_MAX_OUTPUT_PORT_TYPE
+day_10[1] <= temp_day.DB_MAX_OUTPUT_PORT_TYPE
+mon_1[0] <= <GND>
+mon_1[1] <= LessThan11.DB_MAX_OUTPUT_PORT_TYPE
+mon_1[2] <= temp_month.DB_MAX_OUTPUT_PORT_TYPE
+mon_1[3] <= temp_month.DB_MAX_OUTPUT_PORT_TYPE
+mon_10[0] <= temp_month.DB_MAX_OUTPUT_PORT_TYPE
+mon_10[1] <= temp_month.DB_MAX_OUTPUT_PORT_TYPE
+year_1[0] <= <GND>
+year_1[1] <= LessThan19.DB_MAX_OUTPUT_PORT_TYPE
+year_1[2] <= temp_year.DB_MAX_OUTPUT_PORT_TYPE
+year_1[3] <= temp_year.DB_MAX_OUTPUT_PORT_TYPE
+year_10[0] <= temp_year.DB_MAX_OUTPUT_PORT_TYPE
+year_10[1] <= temp_year.DB_MAX_OUTPUT_PORT_TYPE
+year_10[2] <= temp_year.DB_MAX_OUTPUT_PORT_TYPE
+year_10[3] <= temp_year.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_1:dmy
+clk => clk.IN1
+rst_n => rst_n.IN2
+hours_1[0] <= hours_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hours_1[1] <= hours_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hours_1[2] <= hours_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hours_1[3] <= hours_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hours_1[4] <= hours_1[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_hour10 <= clock_hour10~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_1:dmy|min_1:khoi_gio_1a
+clk => clk.IN2
+rst_n => rst_n.IN2
+minutes_1[0] <= minutes_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[1] <= minutes_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[2] <= minutes_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[3] <= minutes_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_min10 <= clock_min10~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_1:dmy|min_1:khoi_gio_1a|counter_1:khoi_phut_1a
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_1:dmy|min_1:khoi_gio_1a|counter_10:khoi_phut_1b
+clk => clk.IN1
+rst_n => rst_n.IN1
+sec_10[0] <= sec_10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[1] <= sec_10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[2] <= sec_10[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_1min <= clock_1min~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_1:dmy|min_1:khoi_gio_1a|counter_10:khoi_phut_1b|counter_1:khoi_giay
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_1:dmy|min_10:khoi_gio_1b
+clk => clk.IN3
+rst_n => rst_n.IN3
+minutes_10[0] <= minutes_10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_10[1] <= minutes_10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_10[2] <= minutes_10[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_10[3] <= minutes_10[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_hour1 <= clock_hour1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_1:dmy|min_10:khoi_gio_1b|counter_1:khoi_phut_10a
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_1:dmy|min_10:khoi_gio_1b|counter_10:khoi_phut_10b
+clk => clk.IN1
+rst_n => rst_n.IN1
+sec_10[0] <= sec_10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[1] <= sec_10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[2] <= sec_10[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_1min <= clock_1min~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_1:dmy|min_10:khoi_gio_1b|counter_10:khoi_phut_10b|counter_1:khoi_giay
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_1:dmy|min_10:khoi_gio_1b|min_1:khoi_phut_10c
+clk => clk.IN2
+rst_n => rst_n.IN2
+minutes_1[0] <= minutes_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[1] <= minutes_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[2] <= minutes_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[3] <= minutes_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_min10 <= clock_min10~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_1:dmy|min_10:khoi_gio_1b|min_1:khoi_phut_10c|counter_1:khoi_phut_1a
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_1:dmy|min_10:khoi_gio_1b|min_1:khoi_phut_10c|counter_10:khoi_phut_1b
+clk => clk.IN1
+rst_n => rst_n.IN1
+sec_10[0] <= sec_10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[1] <= sec_10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[2] <= sec_10[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_1min <= clock_1min~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_1:dmy|min_10:khoi_gio_1b|min_1:khoi_phut_10c|counter_10:khoi_phut_1b|counter_1:khoi_giay
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_10:dmy1
+clk => clk.IN1
+rst_n => rst_n.IN1
+hours_10[0] <= hours_10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hours_10[1] <= hours_10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_day1 <= clock_day1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_10:dmy1|hour_1:khoi_gio_10a
+clk => clk.IN1
+rst_n => rst_n.IN2
+hours_1[0] <= hours_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hours_1[1] <= hours_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hours_1[2] <= hours_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hours_1[3] <= hours_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hours_1[4] <= hours_1[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_hour10 <= clock_hour10~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_10:dmy1|hour_1:khoi_gio_10a|min_1:khoi_gio_1a
+clk => clk.IN2
+rst_n => rst_n.IN2
+minutes_1[0] <= minutes_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[1] <= minutes_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[2] <= minutes_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[3] <= minutes_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_min10 <= clock_min10~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_10:dmy1|hour_1:khoi_gio_10a|min_1:khoi_gio_1a|counter_1:khoi_phut_1a
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_10:dmy1|hour_1:khoi_gio_10a|min_1:khoi_gio_1a|counter_10:khoi_phut_1b
+clk => clk.IN1
+rst_n => rst_n.IN1
+sec_10[0] <= sec_10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[1] <= sec_10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[2] <= sec_10[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_1min <= clock_1min~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_10:dmy1|hour_1:khoi_gio_10a|min_1:khoi_gio_1a|counter_10:khoi_phut_1b|counter_1:khoi_giay
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_10:dmy1|hour_1:khoi_gio_10a|min_10:khoi_gio_1b
+clk => clk.IN3
+rst_n => rst_n.IN3
+minutes_10[0] <= minutes_10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_10[1] <= minutes_10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_10[2] <= minutes_10[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_10[3] <= minutes_10[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_hour1 <= clock_hour1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_10:dmy1|hour_1:khoi_gio_10a|min_10:khoi_gio_1b|counter_1:khoi_phut_10a
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_10:dmy1|hour_1:khoi_gio_10a|min_10:khoi_gio_1b|counter_10:khoi_phut_10b
+clk => clk.IN1
+rst_n => rst_n.IN1
+sec_10[0] <= sec_10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[1] <= sec_10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[2] <= sec_10[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_1min <= clock_1min~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_10:dmy1|hour_1:khoi_gio_10a|min_10:khoi_gio_1b|counter_10:khoi_phut_10b|counter_1:khoi_giay
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_10:dmy1|hour_1:khoi_gio_10a|min_10:khoi_gio_1b|min_1:khoi_phut_10c
+clk => clk.IN2
+rst_n => rst_n.IN2
+minutes_1[0] <= minutes_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[1] <= minutes_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[2] <= minutes_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+minutes_1[3] <= minutes_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_min10 <= clock_min10~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_10:dmy1|hour_1:khoi_gio_10a|min_10:khoi_gio_1b|min_1:khoi_phut_10c|counter_1:khoi_phut_1a
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_10:dmy1|hour_1:khoi_gio_10a|min_10:khoi_gio_1b|min_1:khoi_phut_10c|counter_10:khoi_phut_1b
+clk => clk.IN1
+rst_n => rst_n.IN1
+sec_10[0] <= sec_10[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[1] <= sec_10[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_10[2] <= sec_10[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_1min <= clock_1min~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|day_mon_year:day_mon_year|hour_10:dmy1|hour_1:khoi_gio_10a|min_10:khoi_gio_1b|min_1:khoi_phut_10c|counter_10:khoi_phut_1b|counter_1:khoi_giay
+clk => clk_10s~reg0.CLK
+clk => sec_1[0]~reg0.CLK
+clk => sec_1[1]~reg0.CLK
+clk => sec_1[2]~reg0.CLK
+clk => sec_1[3]~reg0.CLK
+rst_n => clk_10s~reg0.ACLR
+rst_n => sec_1[0]~reg0.ACLR
+rst_n => sec_1[1]~reg0.ACLR
+rst_n => sec_1[2]~reg0.ACLR
+rst_n => sec_1[3]~reg0.ACLR
+sec_1[0] <= sec_1[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[1] <= sec_1[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[2] <= sec_1[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sec_1[3] <= sec_1[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_10s <= clk_10s~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|LED7:led7a
+in[0] => Equal0.IN31
+in[0] => Equal1.IN0
+in[0] => Equal2.IN31
+in[0] => Equal3.IN1
+in[0] => Equal4.IN31
+in[0] => Equal5.IN1
+in[0] => Equal6.IN31
+in[0] => Equal7.IN2
+in[0] => Equal8.IN31
+in[0] => Equal9.IN1
+in[0] => Equal10.IN31
+in[0] => Equal11.IN2
+in[0] => Equal12.IN31
+in[0] => Equal13.IN2
+in[0] => Equal14.IN31
+in[1] => Equal0.IN30
+in[1] => Equal1.IN31
+in[1] => Equal2.IN0
+in[1] => Equal3.IN0
+in[1] => Equal4.IN30
+in[1] => Equal5.IN31
+in[1] => Equal6.IN1
+in[1] => Equal7.IN1
+in[1] => Equal8.IN30
+in[1] => Equal9.IN31
+in[1] => Equal10.IN1
+in[1] => Equal11.IN1
+in[1] => Equal12.IN30
+in[1] => Equal13.IN31
+in[1] => Equal14.IN2
+in[2] => Equal0.IN29
+in[2] => Equal1.IN30
+in[2] => Equal2.IN30
+in[2] => Equal3.IN31
+in[2] => Equal4.IN0
+in[2] => Equal5.IN0
+in[2] => Equal6.IN0
+in[2] => Equal7.IN0
+in[2] => Equal8.IN29
+in[2] => Equal9.IN30
+in[2] => Equal10.IN30
+in[2] => Equal11.IN31
+in[2] => Equal12.IN1
+in[2] => Equal13.IN1
+in[2] => Equal14.IN1
+in[3] => Equal0.IN28
+in[3] => Equal1.IN29
+in[3] => Equal2.IN29
+in[3] => Equal3.IN30
+in[3] => Equal4.IN29
+in[3] => Equal5.IN30
+in[3] => Equal6.IN30
+in[3] => Equal7.IN31
+in[3] => Equal8.IN0
+in[3] => Equal9.IN0
+in[3] => Equal10.IN0
+in[3] => Equal11.IN0
+in[3] => Equal12.IN0
+in[3] => Equal13.IN0
+in[3] => Equal14.IN0
+led[0] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[4] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[5] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[6] <= led.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|LED7:led7b
+in[0] => Equal0.IN31
+in[0] => Equal1.IN0
+in[0] => Equal2.IN31
+in[0] => Equal3.IN1
+in[0] => Equal4.IN31
+in[0] => Equal5.IN1
+in[0] => Equal6.IN31
+in[0] => Equal7.IN2
+in[0] => Equal8.IN31
+in[0] => Equal9.IN1
+in[0] => Equal10.IN31
+in[0] => Equal11.IN2
+in[0] => Equal12.IN31
+in[0] => Equal13.IN2
+in[0] => Equal14.IN31
+in[1] => Equal0.IN30
+in[1] => Equal1.IN31
+in[1] => Equal2.IN0
+in[1] => Equal3.IN0
+in[1] => Equal4.IN30
+in[1] => Equal5.IN31
+in[1] => Equal6.IN1
+in[1] => Equal7.IN1
+in[1] => Equal8.IN30
+in[1] => Equal9.IN31
+in[1] => Equal10.IN1
+in[1] => Equal11.IN1
+in[1] => Equal12.IN30
+in[1] => Equal13.IN31
+in[1] => Equal14.IN2
+in[2] => Equal0.IN29
+in[2] => Equal1.IN30
+in[2] => Equal2.IN30
+in[2] => Equal3.IN31
+in[2] => Equal4.IN0
+in[2] => Equal5.IN0
+in[2] => Equal6.IN0
+in[2] => Equal7.IN0
+in[2] => Equal8.IN29
+in[2] => Equal9.IN30
+in[2] => Equal10.IN30
+in[2] => Equal11.IN31
+in[2] => Equal12.IN1
+in[2] => Equal13.IN1
+in[2] => Equal14.IN1
+in[3] => Equal0.IN28
+in[3] => Equal1.IN29
+in[3] => Equal2.IN29
+in[3] => Equal3.IN30
+in[3] => Equal4.IN29
+in[3] => Equal5.IN30
+in[3] => Equal6.IN30
+in[3] => Equal7.IN31
+in[3] => Equal8.IN0
+in[3] => Equal9.IN0
+in[3] => Equal10.IN0
+in[3] => Equal11.IN0
+in[3] => Equal12.IN0
+in[3] => Equal13.IN0
+in[3] => Equal14.IN0
+led[0] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[4] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[5] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[6] <= led.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|LED7:led7c
+in[0] => Equal0.IN31
+in[0] => Equal1.IN0
+in[0] => Equal2.IN31
+in[0] => Equal3.IN1
+in[0] => Equal4.IN31
+in[0] => Equal5.IN1
+in[0] => Equal6.IN31
+in[0] => Equal7.IN2
+in[0] => Equal8.IN31
+in[0] => Equal9.IN1
+in[0] => Equal10.IN31
+in[0] => Equal11.IN2
+in[0] => Equal12.IN31
+in[0] => Equal13.IN2
+in[0] => Equal14.IN31
+in[1] => Equal0.IN30
+in[1] => Equal1.IN31
+in[1] => Equal2.IN0
+in[1] => Equal3.IN0
+in[1] => Equal4.IN30
+in[1] => Equal5.IN31
+in[1] => Equal6.IN1
+in[1] => Equal7.IN1
+in[1] => Equal8.IN30
+in[1] => Equal9.IN31
+in[1] => Equal10.IN1
+in[1] => Equal11.IN1
+in[1] => Equal12.IN30
+in[1] => Equal13.IN31
+in[1] => Equal14.IN2
+in[2] => Equal0.IN29
+in[2] => Equal1.IN30
+in[2] => Equal2.IN30
+in[2] => Equal3.IN31
+in[2] => Equal4.IN0
+in[2] => Equal5.IN0
+in[2] => Equal6.IN0
+in[2] => Equal7.IN0
+in[2] => Equal8.IN29
+in[2] => Equal9.IN30
+in[2] => Equal10.IN30
+in[2] => Equal11.IN31
+in[2] => Equal12.IN1
+in[2] => Equal13.IN1
+in[2] => Equal14.IN1
+in[3] => Equal0.IN28
+in[3] => Equal1.IN29
+in[3] => Equal2.IN29
+in[3] => Equal3.IN30
+in[3] => Equal4.IN29
+in[3] => Equal5.IN30
+in[3] => Equal6.IN30
+in[3] => Equal7.IN31
+in[3] => Equal8.IN0
+in[3] => Equal9.IN0
+in[3] => Equal10.IN0
+in[3] => Equal11.IN0
+in[3] => Equal12.IN0
+in[3] => Equal13.IN0
+in[3] => Equal14.IN0
+led[0] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[4] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[5] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[6] <= led.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|LED7:led7d
+in[0] => Equal0.IN31
+in[0] => Equal1.IN0
+in[0] => Equal2.IN31
+in[0] => Equal3.IN1
+in[0] => Equal4.IN31
+in[0] => Equal5.IN1
+in[0] => Equal6.IN31
+in[0] => Equal7.IN2
+in[0] => Equal8.IN31
+in[0] => Equal9.IN1
+in[0] => Equal10.IN31
+in[0] => Equal11.IN2
+in[0] => Equal12.IN31
+in[0] => Equal13.IN2
+in[0] => Equal14.IN31
+in[1] => Equal0.IN30
+in[1] => Equal1.IN31
+in[1] => Equal2.IN0
+in[1] => Equal3.IN0
+in[1] => Equal4.IN30
+in[1] => Equal5.IN31
+in[1] => Equal6.IN1
+in[1] => Equal7.IN1
+in[1] => Equal8.IN30
+in[1] => Equal9.IN31
+in[1] => Equal10.IN1
+in[1] => Equal11.IN1
+in[1] => Equal12.IN30
+in[1] => Equal13.IN31
+in[1] => Equal14.IN2
+in[2] => Equal0.IN29
+in[2] => Equal1.IN30
+in[2] => Equal2.IN30
+in[2] => Equal3.IN31
+in[2] => Equal4.IN0
+in[2] => Equal5.IN0
+in[2] => Equal6.IN0
+in[2] => Equal7.IN0
+in[2] => Equal8.IN29
+in[2] => Equal9.IN30
+in[2] => Equal10.IN30
+in[2] => Equal11.IN31
+in[2] => Equal12.IN1
+in[2] => Equal13.IN1
+in[2] => Equal14.IN1
+in[3] => Equal0.IN28
+in[3] => Equal1.IN29
+in[3] => Equal2.IN29
+in[3] => Equal3.IN30
+in[3] => Equal4.IN29
+in[3] => Equal5.IN30
+in[3] => Equal6.IN30
+in[3] => Equal7.IN31
+in[3] => Equal8.IN0
+in[3] => Equal9.IN0
+in[3] => Equal10.IN0
+in[3] => Equal11.IN0
+in[3] => Equal12.IN0
+in[3] => Equal13.IN0
+in[3] => Equal14.IN0
+led[0] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[4] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[5] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[6] <= led.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|LED7:led7e
+in[0] => Equal0.IN31
+in[0] => Equal1.IN0
+in[0] => Equal2.IN31
+in[0] => Equal3.IN1
+in[0] => Equal4.IN31
+in[0] => Equal5.IN1
+in[0] => Equal6.IN31
+in[0] => Equal7.IN2
+in[0] => Equal8.IN31
+in[0] => Equal9.IN1
+in[0] => Equal10.IN31
+in[0] => Equal11.IN2
+in[0] => Equal12.IN31
+in[0] => Equal13.IN2
+in[0] => Equal14.IN31
+in[1] => Equal0.IN30
+in[1] => Equal1.IN31
+in[1] => Equal2.IN0
+in[1] => Equal3.IN0
+in[1] => Equal4.IN30
+in[1] => Equal5.IN31
+in[1] => Equal6.IN1
+in[1] => Equal7.IN1
+in[1] => Equal8.IN30
+in[1] => Equal9.IN31
+in[1] => Equal10.IN1
+in[1] => Equal11.IN1
+in[1] => Equal12.IN30
+in[1] => Equal13.IN31
+in[1] => Equal14.IN2
+in[2] => Equal0.IN29
+in[2] => Equal1.IN30
+in[2] => Equal2.IN30
+in[2] => Equal3.IN31
+in[2] => Equal4.IN0
+in[2] => Equal5.IN0
+in[2] => Equal6.IN0
+in[2] => Equal7.IN0
+in[2] => Equal8.IN29
+in[2] => Equal9.IN30
+in[2] => Equal10.IN30
+in[2] => Equal11.IN31
+in[2] => Equal12.IN1
+in[2] => Equal13.IN1
+in[2] => Equal14.IN1
+in[3] => Equal0.IN28
+in[3] => Equal1.IN29
+in[3] => Equal2.IN29
+in[3] => Equal3.IN30
+in[3] => Equal4.IN29
+in[3] => Equal5.IN30
+in[3] => Equal6.IN30
+in[3] => Equal7.IN31
+in[3] => Equal8.IN0
+in[3] => Equal9.IN0
+in[3] => Equal10.IN0
+in[3] => Equal11.IN0
+in[3] => Equal12.IN0
+in[3] => Equal13.IN0
+in[3] => Equal14.IN0
+led[0] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[4] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[5] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[6] <= led.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|counter|LED7:led7f
+in[0] => Equal0.IN31
+in[0] => Equal1.IN0
+in[0] => Equal2.IN31
+in[0] => Equal3.IN1
+in[0] => Equal4.IN31
+in[0] => Equal5.IN1
+in[0] => Equal6.IN31
+in[0] => Equal7.IN2
+in[0] => Equal8.IN31
+in[0] => Equal9.IN1
+in[0] => Equal10.IN31
+in[0] => Equal11.IN2
+in[0] => Equal12.IN31
+in[0] => Equal13.IN2
+in[0] => Equal14.IN31
+in[1] => Equal0.IN30
+in[1] => Equal1.IN31
+in[1] => Equal2.IN0
+in[1] => Equal3.IN0
+in[1] => Equal4.IN30
+in[1] => Equal5.IN31
+in[1] => Equal6.IN1
+in[1] => Equal7.IN1
+in[1] => Equal8.IN30
+in[1] => Equal9.IN31
+in[1] => Equal10.IN1
+in[1] => Equal11.IN1
+in[1] => Equal12.IN30
+in[1] => Equal13.IN31
+in[1] => Equal14.IN2
+in[2] => Equal0.IN29
+in[2] => Equal1.IN30
+in[2] => Equal2.IN30
+in[2] => Equal3.IN31
+in[2] => Equal4.IN0
+in[2] => Equal5.IN0
+in[2] => Equal6.IN0
+in[2] => Equal7.IN0
+in[2] => Equal8.IN29
+in[2] => Equal9.IN30
+in[2] => Equal10.IN30
+in[2] => Equal11.IN31
+in[2] => Equal12.IN1
+in[2] => Equal13.IN1
+in[2] => Equal14.IN1
+in[3] => Equal0.IN28
+in[3] => Equal1.IN29
+in[3] => Equal2.IN29
+in[3] => Equal3.IN30
+in[3] => Equal4.IN29
+in[3] => Equal5.IN30
+in[3] => Equal6.IN30
+in[3] => Equal7.IN31
+in[3] => Equal8.IN0
+in[3] => Equal9.IN0
+in[3] => Equal10.IN0
+in[3] => Equal11.IN0
+in[3] => Equal12.IN0
+in[3] => Equal13.IN0
+in[3] => Equal14.IN0
+led[0] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[4] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[5] <= led.DB_MAX_OUTPUT_PORT_TYPE
+led[6] <= led.DB_MAX_OUTPUT_PORT_TYPE
+
+

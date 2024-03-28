@@ -1,0 +1,24 @@
+module clock_1s ( 
+  input clk_1s,
+  input rst_1s,
+  output reg clock
+);
+localparam COUNT_1s = 25000000-1;
+reg [26:0] counter=0;
+always @ (posedge clk or negedge rst_n) begin
+  if(!rst_n) begin
+		counter<=0;
+		clk_1hz<=0;
+	end
+	else begin 
+			if(counter==COUNT_1S) begin
+				clk_1hz<=~clk_1hz;
+				counter=0;
+			end
+			else begin
+				counter=counter+1;
+			end
+		end
+	end
+end
+endmodule

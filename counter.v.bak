@@ -1,0 +1,8 @@
+module counter_1 (
+input clk,rst_n,
+output [6:0] led
+);
+wire [3:0] in;
+counter_1S cnt_1 (.clk(clk), .rst_n(rst_n), .sec_1(sec_1), .sec_1(in));
+LED7 led7 (.in(in), .led(led));
+endmodule
